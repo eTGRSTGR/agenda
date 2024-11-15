@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from datetime import date, datetime
 
+st.set_page_config(layout="wide")
+
 # Dicionário para traduzir os meses para português
 meses_portugues = {
     1: "Janeiro",
