@@ -96,7 +96,7 @@ st.markdown(
 )
 
 # Título e descrição
-st.markdown('<div class="main-title">Agenda Digital de Gastos</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">Novo Sabor - Agenda </div>', unsafe_allow_html=True)
 
 # Exibe a tabela de gastos
 st.markdown('<div class="sub-title">Tabela de Gastos</div>', unsafe_allow_html=True)
