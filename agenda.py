@@ -90,6 +90,13 @@ st.markdown(
         background-color: #f44336;
         color: white;
     }
+    .sidebar-img {
+        border-radius: 50%;  /* Faz a imagem ficar redonda */
+        width: 100px;        /* Ajuste o tamanho da imagem conforme necessário */
+        height: 100px;       /* Ajuste o tamanho da imagem conforme necessário */
+        margin-top: 20px;    /* Espaçamento acima da imagem */
+        margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -97,6 +104,12 @@ st.markdown(
 
 # Título e descrição
 st.markdown('<div class="main-title">Novo Sabor - Agenda </div>', unsafe_allow_html=True)
+
+# Sidebar para inserção de imagem e dados
+with st.sidebar:
+    # Carregar a imagem no topo da sidebar, usando o novo parâmetro
+    st.image("/workspaces/agenda/Design sem nome (1).png", use_container_width=True, caption="", output_format="JPEG")
+    st.markdown('<div class="sidebar-title">Inserir novo gasto</div>', unsafe_allow_html=True)
 
 # Exibe a tabela de gastos
 st.markdown('<div class="sub-title">Tabela de Gastos</div>', unsafe_allow_html=True)
@@ -114,7 +127,6 @@ st.download_button(
 
 # Sidebar para inserir um novo gasto
 with st.sidebar:
-    st.markdown('<div class="sidebar-title">Inserir novo gasto</div>', unsafe_allow_html=True)
     categorias_itens = {
         "Gastos Diários": ["Açúcar", "Óleo", "Leite", "Pão de Queijo"],
         "A cada dois dias": ["Carne Moída", "Frango", "Abacaxi"],
