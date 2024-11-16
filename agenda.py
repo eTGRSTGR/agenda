@@ -108,7 +108,7 @@ st.markdown('<div class="main-title">Novo Sabor - Agenda </div>', unsafe_allow_h
 # Sidebar para inserção de imagem e dados
 with st.sidebar:
     # Carregar a imagem no topo da sidebar, usando o novo parâmetro
-    st.image("/workspaces/agenda/Design sem nome (1).png", use_container_width=True, caption="", output_format="JPEG")
+    st.image("/agenda/Design sem nome (1).png", use_container_width=True, caption="", output_format="JPEG")
     st.markdown('<div class="sidebar-title">Inserir novo gasto</div>', unsafe_allow_html=True)
 
 # Exibe a tabela de gastos
