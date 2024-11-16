@@ -94,7 +94,7 @@ st.markdown(
         border-radius: 50%;  /* Faz a imagem ficar redonda */
         width: 100px;        /* Ajuste o tamanho da imagem conforme necessário */
         height: 100px;       /* Ajuste o tamanho da imagem conforme necessário */
-        margin-top: 10px;    /* Espaçamento acima da imagem */
+        margin-top: 0px;    /* Espaçamento acima da imagem */
         margin-bottom: 20px; /* Espaçamento abaixo da imagem */
     }
     </style>
